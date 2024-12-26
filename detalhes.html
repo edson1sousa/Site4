@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Detalhes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <img src="logo.png" alt="Logo do Site">
+    </header>
+    <nav>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="index2.html">Página Inicial 2</a></li>
+            <li><a href="detalhes.html">Página de Detalhes</a></li>
+            <li><a href="sobre.html">Sobre o Autor</a></li>
+            <li><a href="login.html">Admin</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Detalhes do Objeto Tema</h2>
+        <p>Aqui você pode visualizar todos os dados sobre o objeto tema.</p>
+        <!-- Adicione os dados do objeto tema -->
+    </main>
+    <footer>
+        <p>Autor: Nome do Autor</p>
+        <a href="sobre.html">Sobre o Autor</a>
+    </footer>
+    <script>
+        function toggleMenu() {
+            document.querySelector('nav ul').classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
