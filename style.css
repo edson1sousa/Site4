@@ -1,0 +1,86 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --font-family: 'Arial, sans-serif';
+    --font-size: 16px;
+    --padding: 10px;
+    --margin: 10px;
+    --border: 2px solid #ccc;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    padding: var(--padding);
+    margin: var(--margin);
+}
+
+header, nav, footer, main {
+    padding: var(--padding);
+    margin: var(--margin);
+    border: var(--border);
+}
+
+header h1, footer p {
+    color: var(--primary-color);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: var(--margin);
+}
+
+nav ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+button {
+    padding: var(--padding);
+    margin: var(--margin);
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Elementos extras: Menu de navegação */
+.menu-toggle {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        background-color: var(--primary-color);
+        color: #fff;
+        border: none;
+        padding: var(--padding);
+        cursor: pointer;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+    nav ul.show {
+        display: flex;
+    }
+}
