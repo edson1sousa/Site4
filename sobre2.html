@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o Autor</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <img src="logo.png" alt="Logo do Site">
+    </header>
+    <nav>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="index2.html">Página Inicial 2</a></li>
+            <li><a href="detalhes2.html">Página de Detalhes</a></li>
+            <li><a href="sobre2.html">Sobre o Autor</a></li>
+            <li><a href="login2.html">Admin</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Sobre o Autor</h2>
+        <p>Informações sobre o autor do site.</p>
+    </main>
+    <footer>
+        <p>Autor: Nome do Autor</p>
+        <a href="sobre.html">Sobre o Autor</a>
+    </footer>
+    <script>
+        function toggleMenu() {
+            document.querySelector('nav ul').classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
